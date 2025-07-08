@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project 1 Details - Interactive App</title>
+<style>
+  body {
+    background-color: #0b0b0b;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: #FF1C1C;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  iframe {
+    width: 80vw;
+    max-width: 900px;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 28, 28, 0.7);
+    margin-bottom: 40px;
+  }
+  pre {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    font-family: Consolas, monospace;
+    margin-bottom: 20px;
+  }
+  .description-box {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  a.back {
+    color: #FF1C1C;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  a.back:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <h1>Project 1: Interactive App</h1>
+  
+  <iframe src="https://academy.cs.cmu.edu/sharing/blanchedAlmondChicken811444/embed" allowfullscreen></iframe>
+
+  <!-- Python code block -->
+  <pre>
+Rect(0,200,200,200, fill='Black')
+Rect(20,220,160, 160, fill=rgb(22,9,131),border='black',borderWidth=3)
+Label('Partnership for', 78,220,size=15, fill='white',font='monospace',bold=True)
+Label('the goals', 76,240,size=15, fill='white',font='monospace',bold=True)
+
+Oval(95,290,60,60, fill=None, border='white',borderWidth=5)
+Oval(115,342,60,60, fill=None, border='white',borderWidth=5)
+Oval(80,344,60,60, fill=None, border='white',borderWidth=5)
+Oval(64,320,60,60, fill=None, border='white',borderWidth=5)
+Oval(124,320,60,60, fill=None, border='white',borderWidth=5)
+  </pre>
+
+  <!-- Description of the code -->
+  <div class="description-box">
+    <strong>Description:</strong>
+    <p>This Python code uses graphical functions to draw shapes and text that visually represent a logo or design.  
+    - Two rectangles create the background layers, one black and one deep blue with a black border.  
+    - Two label texts display the phrase “Partnership for the goals” in white monospace font.  
+    - Multiple white-bordered ovals are drawn to form a pattern or icon around the text.</p>
+    <p>The code highlights the use of shapes, colors, borders, and positioning to build a complex graphic.</p>
+  </div>
+
+  <a href="index.html" class="back">← Back to Portfolio</a>
+</body>
+</html>
