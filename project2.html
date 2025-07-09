@@ -74,31 +74,32 @@
   <pre>
     functions:
     
-def polber(x,y):
-    Circle(x,y,20,fill='white',border='black',borderWidth=1)
-    Circle(x,y-20,13.33,fill='white',border='black',borderWidth=1)
-    Circle(x-20,y-10,6.66,fill='white', border='black', borderWidth=1)
-    Circle(x+20,y-10,6.66,fill='white', border='black', borderWidth=1)
-    Circle(x+10,y+20,6.66,fill='white', border='black', borderWidth=1)
-    Circle(x-10,y+20,6.66,fill='white', border='black', borderWidth=1)
+def polber(x,y, lor):
+    Circle(x,y,20,fill=lor,border='black',borderWidth=1)
+    Circle(x,y-20,13.33,fill=lor,border='black',borderWidth=1)
+    Circle(x-20,y-10,6.66,fill=lor, border='black', borderWidth=1)
+    Circle(x+20,y-10,6.66,fill=lor, border='black', borderWidth=1)
+    Circle(x+10,y+20,6.66,fill=lor, border='black', borderWidth=1)
+    Circle(x-10,y+20,6.66,fill=lor, border='black', borderWidth=1)
     Circle(x-5,y-23,5,fill='Gray', opacity=40)
     Circle(x+5,y-23,5,fill='Gray', opacity=40)
     Circle(x-5,y-23,3.33,fill='black')
     Circle(x+5,y-23,3.33,fill='black')
     Circle(x,y-13,5,fill='black')
-    Circle(x,y-8,6,fill='white')
+    Circle(x,y-8,6,fill=lor)
     Circle(x,y-20,13.33,fill=None,border='black',borderWidth=1)
 pass
 
+
     calls:
-    polber(325,325)
-    polber(40,60)
+    polber(40,60,'green')
+    polber(320,240, 'gold')
   </pre>
 
   <!-- Description of the code -->
   <div class="description-box">
     <strong>Description:</strong>
-    <p>This code defines a function called polber that draws a cartoon-like polar bear using simple circles. When you call polber(x, y), it draws the polar bear centered at the position (x, y). The body is represented by a large white circle, and the head is drawn as a slightly smaller white circle above it. Small white circles on the sides of the head form the ears, while two small white circles at the bottom represent the feet or paws. The eyes are created using grey circles with black pupils inside, giving the bear a cute appearance. A small black circle forms the nose, and a slightly larger white circle just below the eyes gives the illusion of a snout or mouth area. Finally, the outline of the head is redrawn with a transparent fill to emphasize the border. The function is called twice at different positions, so two polar bears appear on the screen at different locations. </p>
+    <p>The polber function draws a cartoon polar bear using circles. You give it three inputs: the x and y coordinates to position the bear on the screen, and lor to choose the bear’s color. The function creates the bear’s body as a large colored circle, with a smaller circle above it for the head. It adds ears on the sides, and feet below the body, all in the same color. The eyes are made with grey circles (for the whites) and smaller black circles (for the pupils). A black circle forms the nose, and a slightly larger colored circle below the eyes represents the muzzle. Finally, the head is outlined with a black border to make it stand out. By calling this function with different positions and colors, you can draw multiple colorful polar bears anywhere you like.</p>
     <p>The code highlights the use of shapes, colors, borders, and positioning to build a complex graphic.I created a program that displays ways to protect the environment using colors and text. It shows I can make clear and attractive designs with code.</p>
   </div>
 
