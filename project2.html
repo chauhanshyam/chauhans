@@ -72,25 +72,33 @@
 
   <!-- Python code block -->
   <pre>
-def Solutions():
-    Rect(0,0,400,400,fill='black', border='white', borderWidth=7)
-    Label('Solutions:', 100,35,size=30,fill='white',)
-    Label('Transition to renewable energy sources', 200,80, size=20,font='cursive', fill='lime')
-    Label('(solar, wind, hydro)', 200,95, size=20,font='cursive', fill='lime')
-    Label('promoting sustainable transportation', 200,125, size=20,font='cursive', fill='gold')
-    Label('(electric vehical, public transit)', 200,140, size=20,font='cursive', fill='gold')
-    Label('Reforestation and conservation efforts', 200,170, size=20,font='cursive', fill='silver')
-    Label('Implementation of green policies', 200,200, size=20,font='cursive', fill='red')
-    Label('(carbon taxes, emission caps)', 200,215, size=20,font='cursive', fill='red')
-    Label('Education & awareness campaigns', 200,245, size=20,font='cursive', fill='cyan')
-    Label('on climate change', 200,260, size=20,font='cursive', fill='cyan')
-    polber(335,340)
+    functions:
+    
+def polber(x,y):
+    Circle(x,y,20,fill='white',border='black',borderWidth=1)
+    Circle(x,y-20,13.33,fill='white',border='black',borderWidth=1)
+    Circle(x-20,y-10,6.66,fill='white', border='black', borderWidth=1)
+    Circle(x+20,y-10,6.66,fill='white', border='black', borderWidth=1)
+    Circle(x+10,y+20,6.66,fill='white', border='black', borderWidth=1)
+    Circle(x-10,y+20,6.66,fill='white', border='black', borderWidth=1)
+    Circle(x-5,y-23,5,fill='Gray', opacity=40)
+    Circle(x+5,y-23,5,fill='Gray', opacity=40)
+    Circle(x-5,y-23,3.33,fill='black')
+    Circle(x+5,y-23,3.33,fill='black')
+    Circle(x,y-13,5,fill='black')
+    Circle(x,y-8,6,fill='white')
+    Circle(x,y-20,13.33,fill=None,border='black',borderWidth=1)
 pass
+
+    calls:
+    polber(325,325)
+    polber(40,60)
   </pre>
 
   <!-- Description of the code -->
   <div class="description-box">
     <strong>Description:</strong>
+    <p>This code defines a function called polber that draws a cartoon-like polar bear using simple circles. When you call polber(x, y), it draws the polar bear centered at the position (x, y). The body is represented by a large white circle, and the head is drawn as a slightly smaller white circle above it. Small white circles on the sides of the head form the ears, while two small white circles at the bottom represent the feet or paws. The eyes are created using grey circles with black pupils inside, giving the bear a cute appearance. A small black circle forms the nose, and a slightly larger white circle just below the eyes gives the illusion of a snout or mouth area. Finally, the outline of the head is redrawn with a transparent fill to emphasize the border. The function is called twice at different positions, so two polar bears appear on the screen at different locations. </p>
     <p>The Solutions() function creates a visually appealing display that highlights various approaches to addressing climate change. It begins by drawing a black rectangular background with a white border to frame the content. The title "Solutions:" is prominently shown near the top, followed by a list of key strategies presented in different colors and fonts to emphasize their importance. These strategies include transitioning to renewable energy sources such as solar, wind, and hydro power, promoting sustainable transportation options like electric vehicles and public transit, supporting reforestation and conservation efforts, implementing green policies including carbon taxes and emission caps, and raising awareness through education campaigns about climate change. Overall, the function organizes these ideas clearly and creatively to communicate effective environmental solutions.</p>
     <p>The code highlights the use of shapes, colors, borders, and positioning to build a complex graphic.I created a program that displays ways to protect the environment using colors and text. It shows I can make clear and attractive designs with code.</p>
   </div>
