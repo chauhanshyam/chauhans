@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project 1 Details - Interactive App</title>
+<style>
+  body {
+    background-color: #0b0b0b;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: #FF1C1C;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  iframe {
+    width: 80vw;
+    max-width: 900px;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 28, 28, 0.7);
+    margin-bottom: 40px;
+  }
+  pre {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    font-family: Consolas, monospace;
+    margin-bottom: 20px;
+  }
+  .description-box {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  a.back {
+    color: #FF1C1C;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  a.back:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <h1>Project 2: Climet change</h1>
+  
+  <iframe src="https://academy.cs.cmu.edu/sharing/violetDog774265/embed" allowfullscreen></iframe>
+
+  <!-- Python code block -->
+  <pre>
+    functions:
+    
+def Mov(x,y):
+    body.centerX=x
+    body.centerY=y-5
+    eye.centerX=x
+    eye.centerY=y-10
+    tail.centerX=x
+    tail.centerY=y+10
+    
+
+    
+    if (Count.value > 1):
+        
+        if 0 < x < 320 and 270 < y < 300:
+            if (lives.value > 0):
+                lives.value -= 1
+            else:
+                losSC()
+    
+    
+    if (Count.value > 1):
+        if 90 < x < 400 and 140 < y < 220:
+            if (lives.value > 0):
+                lives.value -= 1
+            else:
+                losSC()
+    
+    if (Count.value > 1):
+        if x < 325 and y < 80:
+            if (lives.value > 0):
+                lives.value -= 1
+            else:
+                losSC()
+                
+                
+    if (Count.value > 1):
+        if  x > 340 and y < 40:
+            vicSC()
+            lives.value += 1000000000000
+            
+
+    calls:
+    def onMouseMove(x, y):
+    Mov(x,y)
+
+    
+    def onMousePress(x, y):
+    Mov(x,y)
+  </pre>
+
+  <!-- Description of the code -->
+  <div class="description-box">
+    <strong>Description:</strong>
+    <p>The polber function draws a cartoon polar bear using circles. You give it three inputs: the x and y coordinates to position the bear on the screen, and lor to choose the bear’s color. The function creates the bear’s body as a large colored circle, with a smaller circle above it for the head. It adds ears on the sides, and feet below the body, all in the same color. The eyes are made with grey circles (for the whites) and smaller black circles (for the pupils). A black circle forms the nose, and a slightly larger colored circle below the eyes represents the muzzle. Finally, the head is outlined with a black border to make it stand out. By calling this function with different positions and colors, you can draw multiple colorful polar bears anywhere you like.</p>
+    <p>The code highlights the use of shapes, colors, borders, and positioning to build a complex graphic.I created a program that displays ways to protect the environment using colors and text. It shows I can make clear and attractive designs with code.</p>
+  </div>
+
+  <a href="index.html" class="back">← Back to Portfolio</a>
+</body>
+</html>
