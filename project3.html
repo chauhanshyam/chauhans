@@ -134,8 +134,8 @@ def clos(hig):
   <div class="description-box">
     <strong>Description:</strong>
     <p>
-      The Mov function moves a character's body, eye, and tail to follow the mouse. When the mouse moves, the parts shift to match the new x and y position with small offsets. The function also checks if the character enters danger zones—if it does, the player loses a life. If lives run out, it calls a function to show a losing screen.</p>
-    <p>There’s also a winning zone in the top-right corner. If the character reaches it, the game triggers a victory screen and adds a large number of lives. This shows how the code combines movement, collision checks, and simple game rules to create an interactive experience.</p>
+      The clos function changes the character’s body color based on how high it moves on the screen, using the y-position to indicate proximity. As the character gets closer to the top, the color shifts from yellow to red. If lives are already lost, it also updates a message with phrases like "very far" or "almost there" to reflect how close the player is.</p>
+    <p>The onMouseMove function lets the character follow the mouse, adjusting the body, eye, and tail positions with slight offsets. It also checks if the character enters any danger zones—if so, a life is lost. When lives run out, a losing screen is triggered. This ties movement, danger detection, and visual feedback into the gameplay.</p>
   </div>
 
   <a href="index.html" class="back">← Back to Portfolio</a>
