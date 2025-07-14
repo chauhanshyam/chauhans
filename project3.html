@@ -73,54 +73,61 @@
   <!-- Python code block -->
   <pre>
     functions:
-    
-def Mov(x,y):
+def clos(hig):
+    if hig > 300:
+        body.fill = 'yellow'
+        if (lives.value < 0):
+            dis.value = 'very far'
+    if 200 < hig < 300:
+        body.fill = 'green'
+        if (lives.value < 0):
+            dis.value = 'far'
+    if 100 < hig < 200:
+        body.fill = 'orange'
+        if (lives.value < 0):
+            dis.value = 'bit close'
+    if hig < 100:
+        body.fill = 'red'
+        if (lives.value < 0):
+            dis.value = 'almost there'
+             
+    calls:
+             
+    def onMouseMove(x, y):
     body.centerX=x
     body.centerY=y-5
     eye.centerX=x
     eye.centerY=y-10
     tail.centerX=x
     tail.centerY=y+10
-    
+    clos(y)
 
-    
+
+
+
     if (Count.value > 1):
-        
         if 0 < x < 320 and 270 < y < 300:
             if (lives.value > 0):
                 lives.value -= 1
             else:
                 losSC()
-    
-    
+                clos(y)
     if (Count.value > 1):
         if 90 < x < 400 and 140 < y < 220:
             if (lives.value > 0):
                 lives.value -= 1
             else:
                 losSC()
-    
+                clos(y)
     if (Count.value > 1):
         if x < 325 and y < 80:
             if (lives.value > 0):
                 lives.value -= 1
             else:
                 losSC()
-                
-                
-    if (Count.value > 1):
-        if  x > 340 and y < 40:
-            vicSC()
-            lives.value += 1000000000000
-            
+                clos(y)
 
-    calls:
-    def onMouseMove(x, y):
-    Mov(x,y)
-
-    
-    def onMousePress(x, y):
-    Mov(x,y)
+             
   </pre>
 
   <!-- Description of the code -->
