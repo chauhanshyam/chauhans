@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project 4 Details - question and awnsers</title>
+<style>
+  body {
+    background-color: #0b0b0b;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: #FF1C1C;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  iframe {
+    width: 80vw;
+    max-width: 900px;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 28, 28, 0.7);
+    margin-bottom: 40px;
+  }
+  pre {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    font-family: Consolas, monospace;
+    margin-bottom: 20px;
+  }
+  .description-box {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  a.back {
+    color: #FF1C1C;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  a.back:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <h1>Project 3: plastich fish</h1>
+  
+  <iframe src="https://academy.cs.cmu.edu/sharing/coralMonkey176857/embed" allowfullscreen></iframe>
+
+  <!-- Python code block -->
+  <pre>
+    #home
+    if app.swi == True:
+        app.con += 1
+        app.swi = False
+    if app.con == 2:
+        HomS(False)
+        sedS(True)
+        if ss1.hits(mouseX,mouseY):
+            app.points += 0
+            app.con += 1
+        if ss2.hits(mouseX,mouseY):
+            app.points+=1
+            app.con += 1
+        if ss3.hits(mouseX,mouseY):
+            app.points += 2
+            app.con += 1
+    elif app.con == 3:
+        sedS(False)
+        thrS(True)
+        if tb1.hits(mouseX,mouseY):
+            app.points += 2
+            app.con += 1
+        elif tb2.hits(mouseX,mouseY):
+            app.points += 1
+            app.con += 1
+    elif app.con == 4:
+        thrS(False)
+        forS(True)
+        if fs1.hits(mouseX,mouseY):
+            app.points += 1
+            app.con = 5
+        elif fs2.hits(mouseX,mouseY):
+            app.points += 0
+            app.con = 5
+        elif fs3.hits(mouseX,mouseY):
+            app.points += 2
+            app.con = 5
+            print(app.con)
+            
+    elif app.con == 5:
+        forS(False)
+        final(True)
+  </pre>
+
+  <!-- Description of the code -->
+  <div class="description-box">
+    <strong>Description:</strong>
+    <p>
+      The onMousePress function handles scene transitions and point scoring based on user clicks. It starts by checking a toggle (app.swi) to move past the home screen, then progresses through different scenes using a counter (app.con). In each scene, the player clicks on objects (ss1, ss2, etc.) that award different point values and advance the game.</p>
+    <p>As the scenes change, visual states are updated (e.g., HomS(False), sedS(True)), and the final screen is triggered when the last selection is made. This function ties user input to gameplay flow, tracking progress and scoring through a simple click-based interaction system.</p>
+  </div>
+
+  <a href="index.html" class="back">← Back to Portfolio</a>
+</body>
+</html>
