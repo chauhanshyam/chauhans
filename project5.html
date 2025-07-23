@@ -119,9 +119,10 @@
   <!-- Description of the code -->
   <div class="description-box">
     <strong>Description:</strong>
-    <p>
-      The onMousePress function handles scene transitions and point scoring based on user clicks. It starts by checking a toggle (app.swi) to move past the home screen, then progresses through different scenes using a counter (app.con). In each scene, the player clicks on objects (ss1, ss2, etc.) that award different point values and advance the game.</p>
-    <p>As the scenes change, visual states are updated (e.g., HomS(False), sedS(True)), and the final screen is triggered when the last selection is made. This function ties user input to gameplay flow, tracking progress and scoring through a simple click-based interaction system.</p>
+    <div class="description-box"> <strong>Description:</strong> <p> This section listens for the <strong>'Enter'</strong> key to begin the game. When pressed, the splash screen and instructions are hidden by setting their visibility to <code>False</code>. The game state is updated by setting <code>app.gameStarted</code> to <code>True</code>, and the toxic and clean waste positions are reset for a fresh start. It ensures the game is ready to run with a clean setup. </p> </div>    <p>As the scenes change, visual states are updated (e.g., HomS(False), sedS(True)), and the final screen is triggered when the last selection is made. This function ties user input to gameplay flow, tracking progress and scoring through a simple click-based interaction system.</p>
+<div class="description-box"> <strong>Description:</strong> <p> This logic checks for collisions between the boat and waste objects. If the boat hits any <strong>toxic waste</strong> (gray objects), the function returns <code>True</code>, which ends the game. If it hits <strong>clean waste</strong> (white objects), it increases <code>app.weeee</code>, which tracks the score. If no collisions happen, the function returns <code>False</code>, allowing the game to continue. It separates dangerous and safe interactions using different object groups. </p> </div>
+    
+  
   </div>
 
   <a href="index.html" class="back">← Back to Portfolio</a>
