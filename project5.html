@@ -72,48 +72,29 @@
 
   <!-- Python code block -->
   <pre>
-    #home
-    if app.swi == True:
-        app.con += 1
-        app.swi = False
-    if app.con == 2:
-        HomS(False)
-        sedS(True)
-        if ss1.hits(mouseX,mouseY):
-            app.points += 0
-            app.con += 1
-        if ss2.hits(mouseX,mouseY):
-            app.points+=1
-            app.con += 1
-        if ss3.hits(mouseX,mouseY):
-            app.points += 2
-            app.con += 1
-    elif app.con == 3:
-        sedS(False)
-        thrS(True)
-        if tb1.hits(mouseX,mouseY):
-            app.points += 2
-            app.con += 1
-        elif tb2.hits(mouseX,mouseY):
-            app.points += 1
-            app.con += 1
-    elif app.con == 4:
-        thrS(False)
-        forS(True)
-        if fs1.hits(mouseX,mouseY):
-            app.points += 1
-            app.con = 5
-        elif fs2.hits(mouseX,mouseY):
-            app.points += 0
-            app.con = 5
-        elif fs3.hits(mouseX,mouseY):
-            app.points += 2
-            app.con = 5
-            print(app.con)
-            
-    elif app.con == 5:
-        forS(False)
-        final(True)
+conditionals: 
+    1. 
+    if not app.gameStarted and key == 'enter':
+        app.gameStarted = True
+        Score = 0
+        splashLabel.visible=False
+        splashLabel1.visible = False
+        splashLabel2.visible =False
+        splashLabel3.visible = False
+        splashLabel4.visible= False
+        splashLabel5.visible= False
+        StartS.visible=False
+        resetToxs()
+        resetTox1()
+
+    2.
+    def checkCollision():
+    if bloat.hitsShape(Tox1) or bloat.hitsShape(Tox3) or bloat.hitsShape(Tox5) or bloat.hitsShape(Tox7):
+        return True
+    elif bloat.hitsShape(Tox2) or bloat.hitsShape(Tox4) or bloat.hitsShape(Tox6) or bloat.hitsShape(Tox8):
+        app.weeee += 1
+    else:
+        return False
   </pre>
 
   <!-- Description of the code -->
