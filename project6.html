@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project 6 Details - final project</title>
+<style>
+  body {
+    background-color: #0b0b0b;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: #FF1C1C;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  iframe {
+    width: 80vw;
+    max-width: 900px;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 28, 28, 0.7);
+    margin-bottom: 40px;
+  }
+  pre {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    font-family: Consolas, monospace;
+    margin-bottom: 20px;
+  }
+  .description-box {
+    background-color: #1a1a1a;
+    border: 2px solid #FF1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80vw;
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  a.back {
+    color: #FF1C1C;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  a.back:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <h1>Project 6: final project</h1>
+  
+  <iframe src="https://academy.cs.cmu.edu/sharing/maroonChicken809642/embed" allowfullscreen></iframe>
+
+  <!-- Python code block -->
+  <pre>
+conditionals: 
+    1. "and"
+        if not app.gameStarted and key == 'enter':
+        app.gameStarted = True
+        app. Score = 0
+        app. Weeee = 0
+        app.backGround = 'lightGreen'
+        splashLabel.visible=False
+        splashLabel1.visible = False
+        splashLabel2.visible =False
+        splashLabel3.visible = False
+        splashLabel4.visible= False
+        StartS.visible=False
+        endG.visible = False
+        refall()
+
+    2."or"
+    def checkCollision():
+    if bloat.hitsShape(frt1) or bloat.hitsShape(frt3) or bloat.hitsShape(frt5) or bloat.hitsShape(frt7):
+        endgame()
+        return True
+    elif bloat.hitsShape(frt2) or bloat.hitsShape(frt4) or bloat.hitsShape(frt6) or bloat.hitsShape(frt8):
+        if bloat.hitsShape(frt2):
+            app.weeee += 1
+            resetfrts(2)
+        if bloat.hitsShape(frt4):
+            app.weeee += 1
+            resetfrts(4)
+        if bloat.hitsShape(frt6):
+            app.weeee += 1
+            resetfrts(6)
+        if bloat.hitsShape(frt8):
+            app.weeee += 1
+            resetfrts(8)
+     
+    else:
+        return False
+
+    3."not"
+        elif not app.gameStarted and key == 'space' and endG.visible:
+        app.gameStarted = True
+        app. weeee = 0
+        app.backGround = 'lightGreen'
+        splashLabel.value=''
+        splashLabel.size = 18
+        splashLabel.centerX = 320
+        splashLabel.centerY = 30
+        endG.visible = False
+        Yg.visible = False
+        Yg1.visible = False
+        Yg3.visible =False
+        Yg2.visible=False
+        refall()  
+
+
+onStep functions:
+    
+
+        def onStep():
+    if not app.gameStarted:
+        return
+    REP()
+    frt1.centerY += 10
+    frt2.centerY += 10
+    frt3.centerY += 10
+    frt4.centerY += 10
+    frt5.centerY += 10
+    frt6.centerY +=10
+    frt7.centerY +=10
+    frt8.centerY +=10
+    checkCollision()
+    updatescore()
+
+
+function + perimeter:
+
+
+  def BBGGs(vis):
+    BG.visible=vis
+    BG1.visible=vis
+    BB1.visible=vis
+    B1.visible=vis
+    BB2.visible=vis
+    B2.visible=vis
+    BB3.visible=vis
+    B3.visible=vis
+    BGM.visible=vis
+
+    BG.toFront()
+    BG1.toFront()
+    BB1.toFront()
+    B1.toFront()
+    BB2.toFront()
+    B2.toFront()
+    BB3.toFront()
+    B3.toFront()
+    BGM.toFront()
+
+    calls: 
+       1.
+         if BB1.contains(mouseX,mouseY):
+        BBGGs(False)
+        2.
+                  
+    if (key == 'r'):
+        BBGGs(True)
+        app.gameStarted = False
+        stl.visible=False
+        st2.visible =False
+        stm.visible=False
+  </pre>
+
+  <!-- Description of the code -->
+  <div class="description-box">
+    <strong>Description:</strong>
+<div class="description-box"> <strong>Description:</strong> <p> This <code>if</code> statement uses <strong><code>not</code></strong> and <strong><code>and</code></strong> to control when the game should start. It checks that the game is <em>not already running</em> and that the <strong>Enter</strong> key was pressed. When both conditions are true, the game state is updated, the splash screen is hidden, and the waste items are reset. This ensures the game only starts once and only with the correct key press. </p> </div>
+    <div class="description-box"> <strong>Description:</strong> <p> This condition uses the <strong><code>or</code></strong> operator to check if the boat hits any toxic or clean waste objects. If it hits any of the toxic ones, it returns <code>True</code> (ending the game). If it hits a clean one, it increases the score. The <code>or</code> operator allows checking multiple objects in a single line, making it easy to handle grouped interactions. If no collisions are found, it safely returns <code>False</code>. </p> </div>
+  
+  </div>
+
+  <a href="index.html" class="back">← Back to Portfolio</a>
+</body>
+</html>
